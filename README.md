@@ -15,7 +15,7 @@ Script1 processes NFL data to analyze team performance for team-year combination
 
 *numpy* 
 
-### Script2 ###
+## Script2 ##
 
 ### Description ###
 
@@ -26,7 +26,6 @@ Script2 focuses on non-playoff teams, identifying the top scorer among these tea
 *pandas*
 
 *numpy*
-
 
 ## Dataset and Acknowledgements ##
 The scripts use data from all NFL games beginning September 2000 through the end of the 2023 season. The data is stored in the NFL_data.csv file, which is provided in the repository for your reference.
