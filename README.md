@@ -10,6 +10,7 @@ Script1 processes NFL data to analyze team performance for team-year combination
 
 Requirements
 *pandas*
+
 *numpy* 
 
 ### Script2 ###
@@ -19,6 +20,7 @@ Script2 focuses on non-playoff teams, identifying the top scorer among these tea
 
 Requirements
 *pandas*
+
 *numpy*
 
 
