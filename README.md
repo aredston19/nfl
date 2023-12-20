@@ -3,13 +3,11 @@
 ## Overview ##
 This repository contains Python scripts for analyzing NFL data from a CSV file. The analysis focuses on team performance, including win-loss records, playoff appearances, and points scored. There are two sub-scripts in this repository (script1.py and script2.py which provide different insights on the dataset.
 
-script1
-
+### Script1  ###
 Description
-
 Script1 processes NFL data to analyze team performance for team-year combinations. It calculates win-loss-tie records, total points scored, and playoff status for each team in each specified year. *Function2* currently has an output for every team-year combination, but the *Function* can be changed to find insights for all teams in a specific year, all years for a specific team, or a specific team-year combination.
 
-script1 - Requirements
+Requirements
 *pandas*
 *numpy* 
 
