@@ -1,5 +1,7 @@
+##script1
+
 import pandas as pd
-import numpy as np
+##import numpy as np
 
 ##turn the csv data into a dataframe
 df = pd.read_csv("NFL_data.csv")
@@ -7,9 +9,9 @@ df = pd.read_csv("NFL_data.csv")
 def function(team, year):
      
     
-    df["Win Count"] = np.where(df["Team Score"] > df["Opponent Score"],1, 0)
-    df["Loss Count"] = np.where(df["Team Score"] < df["Opponent Score"],1, 0)
-    df["Ties"] = np.where(df["Team Score"] == df["Opponent Score"],1, 0)
+    df["Win Count"] = (df["Team Score"] > df["Opponent Score"]).astype(int)
+    df["Loss Count"] = (df["Team Score"] < df["Opponent Score"]).astype(int)
+    df["Ties"] = (df["Team Score"] == df["Opponent Score"]).astype(int)
     
     df_1 = df.loc[(df["Team ID"] == team) & (df["Schedule Season"] == year)]
     df_playoffcheck = df_1.loc[df_1["Schedule Playoff"] == True]
@@ -60,8 +62,10 @@ function2()
 
 ------------------------
 
+##script2
+
 import pandas as pd
-import numpy as np
+##import numpy as np
 df = pd.read_csv("NFL_data.csv")
 
 def function3(year):
